@@ -1,0 +1,69 @@
+<!-- one way databinding -->
+
+<!-- <mat-card>
+  <mat-toolbar>Post</mat-toolbar>
+  <br><br>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Enter title" #title>
+    <br><br>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary" (click)="getValue(title)">Add Post</button>
+  <br><br>
+
+<p>{{userInput}}</p>
+
+<br><br>
+
+
+<mat-card> -->
+
+  <!-- two way data binding -->
+  <mat-card>
+  <mat-toolbar>Two way databinding</mat-toolbar>
+  <br><br>
+  <mat-form-field>
+      <input type="text" placeholder="Enter your address" matInput [(ngModel)]="enteraddress">
+    </mat-form-field>
+    <br>
+    <br>
+
+    <mat-form-field>
+      <input type="text" placeholder="Enter your name" matInput [(ngModel)]="enterName">
+    </mat-form-field>
+    <br>
+    <br>
+
+    <mat-form-field>
+      <input type="text" placeholder="Enter your email" matInput [(ngModel)]="enterEmail">
+    </mat-form-field>
+    <br>
+    <br>
+
+     <button type="submit" mat-raised-button color="accent"(click)="getmsg()">Login</button>
+
+      <br><br>
+
+      <p>{{address}}</p>
+      <p>{{name}}</p>
+      <p>{{email}}</p>
+
+
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<mat-card>
+  <br> <br>
+  <button type="submit" mat-raised-button color="primary" (click)="showmessage()">display msg</button>
+  <br><br>
+
+
+
+<div *ngIf="showmsg else falsecondition">
+  button is clicked
+  </div>
+
+<ng-template #falsecondition>
+  button is not clicked
+
+</ng-template>
+</mat-card>
+
+<br><br>
+<!-- this is the use of for loop -->
+Fruits names are:<br>
+<p *ngFor="let i of fruits">{{i}}</p>
+
+
+
+
+

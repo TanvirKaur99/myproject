@@ -1,0 +1,21 @@
+<!-- this is one way binding example -->
+
+ <mat-card>
+  <mat-form-field>
+    <input type ="text"
+    #username
+    placeholder="Enter text here">
+  </mat-form-field>
+  <br><br>
+
+  <mat-form-field>
+  <button type="submit"mat-raised-button color="primary" (click)="changeText(username)"> click me</button>
+  </mat-form-field>
+
+</mat-card>
+<br><br>
+<p> {{name}}</p>
+
+
+
+
